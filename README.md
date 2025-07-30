@@ -16,6 +16,26 @@ The goal is to provide a simple yet powerful tool for security enthusiasts, rese
 
 ---
 
+## 🗂️ Datasets Used
+
+The XGBoost model was trained using publicly available datasets containing labeled network traffic:
+
+- **CICDDoS2019**  
+  Source: Canadian Institute for Cybersecurity  
+  Features extracted using **CICFlowMeter**  
+  Includes multiple types of DDoS attacks (UDP, SYN, TCP, etc.)
+
+- **CICIDS2017 (Selected UDP Attack Flows)**  
+  Source: Canadian Institute for Cybersecurity  
+  Used to supplement benign traffic and UDP attack flows  
+  Extracted features standardized to match the CICDDoS2019 format
+
+These datasets provided labeled network flows categorized as **BENIGN** or **DDoS**, with a focus on **UDP-based traffic** for binary classification.
+
+> ⚠️ **Note**: Accuracy may still be shaky due to dataset limitations, such as lack of modern attack variations and insufficient real-world diversity.
+
+---
+
 ## 🛠️ Tools & Frameworks Used
 
 - **Python 3.10**
@@ -53,4 +73,3 @@ Improvements in data collection and model tuning are planned to address these li
 - 🌐 Option to deploy as a lightweight SIEM for broader monitoring.
 
 ---
-
