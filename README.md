@@ -32,8 +32,6 @@ The XGBoost model was trained using publicly available datasets containing label
 
 These datasets provided labeled network flows categorized as **BENIGN** or **DDoS**, with a focus on **UDP-based traffic** for binary classification.
 
-> ⚠️ **Note**: Accuracy may still be shaky due to dataset limitations, such as lack of modern attack variations and insufficient real-world diversity.
-
 ---
 
 ## 🛠️ Tools & Frameworks Used
